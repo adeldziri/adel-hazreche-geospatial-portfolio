@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sonelgaz Biskra Utility Network Intelligence | Adel Hazreche</title>
+  <meta name="description" content="Independent WebGIS prototype demonstrating utility network modeling, topology, tracing, outage simulation, and spatial decision support using synthetic data.">
+  <link rel="canonical" href="https://edwardkenway80.github.io/projects/sonelgaz-biskra.html">
+
+  <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+  <link rel="stylesheet" href="../style.css">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Sonelgaz Biskra Utility Network Intelligence — Independent Prototype">
+  <meta property="og:description" content="Independent WebGIS prototype demonstrating utility network modeling, topology, tracing, outage simulation, and spatial decision support using synthetic data.">
+  <meta property="og:image" content="../assets/og-image.svg">
+  <meta property="og:url" content="https://edwardkenway80.github.io/projects/sonelgaz-biskra.html">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Sonelgaz Biskra Utility Network Intelligence | Adel Hazreche">
+  <meta name="twitter:description" content="Utility network modeling, topology tracing, and outage simulation prototype.">
+</head>
+<body>
+
+  <!-- Top Navigation Bar (Consistent 3-Zone Contract) -->
+  <header class="site-header">
+    <div class="header-container">
+      <a href="../index.html" class="brand-wordmark" aria-label="Adel Hazreche Home">
+        <span class="brand-dot" aria-hidden="true"></span>
+        <span>ADEL HAZRECHE</span>
+      </a>
+
+      <nav class="nav-menu" aria-label="Project Navigation">
+        <a href="../index.html#capabilities" class="nav-link">Capabilities</a>
+        <a href="../index.html#architecture" class="nav-link">Architecture</a>
+        <a href="../index.html#projects" class="nav-link">Technical Work</a>
+        <a href="../index.html#partnership" class="nav-link">Partnership</a>
+        <a href="../index.html#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="../index.html#contact" class="btn-header-cta">
+          <span>Let's Discuss</span>
+        </a>
+        <button id="mobile-menu-btn" class="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div id="mobile-drawer" class="mobile-nav-drawer" aria-label="Mobile Navigation">
+    <a href="../index.html#capabilities" class="nav-link">Capabilities</a>
+    <a href="../index.html#architecture" class="nav-link">Architecture</a>
+    <a href="../index.html#projects" class="nav-link">Technical Work</a>
+    <a href="../index.html#partnership" class="nav-link">Partnership</a>
+    <a href="../index.html#contact" class="nav-link">Contact</a>
+    <a href="../docs/Adel_Hazreche_Technical_Partnership_Profile.pdf" class="nav-link" target="_blank" rel="noopener">Partnership Profile (PDF)</a>
+  </div>
+
+  <main>
+    <!-- Project Hero -->
+    <section class="page-hero">
+      <div class="container">
+        <a href="../index.html#projects" class="page-back-link">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="19" y1="12" x2="5" y2="12"></line>
+            <polyline points="12 19 5 12 12 5"></polyline>
+          </svg>
+          <span>Back to Selected Technical Work</span>
+        </a>
+
+        <div class="project-meta-kicker">
+          <span>SYNTHETIC DATA</span>
+          <span class="kicker-sep">·</span>
+          <span>INDEPENDENT TECHNICAL PROTOTYPE</span>
+          <span class="kicker-sep">·</span>
+          <span>UTILITY GIS</span>
+        </div>
+
+        <h1 class="page-title">Sonelgaz Biskra Utility Network Intelligence</h1>
+        <p class="page-subtitle">
+          An independent WebGIS prototype demonstrating infrastructure network modeling, asset management concepts, topology, tracing, outage simulation, spatial analysis, and operational decision-support visualization.
+        </p>
+
+        <!-- Mandatory Disclaimer -->
+        <div class="disclaimer-box" style="margin-top: 24px; max-width: 860px;">
+          <strong>DISCLAIMER &amp; PROVENANCE NOTICE:</strong> Independent technical prototype developed solely for capability demonstration purposes using synthetic data. This project is not affiliated with, authorized by, or representative of Sonelgaz operational systems or internal proprietary databases.
+        </div>
+
+        <!-- Technical Specification Matrix -->
+        <div class="tech-spec-grid">
+          <div class="tech-spec-card">
+            <div class="tech-spec-title">Focus Area</div>
+            <div class="tech-spec-value">Electric Distribution Utility Modeling &amp; Tracing</div>
+          </div>
+          <div class="tech-spec-card">
+            <div class="tech-spec-title">Core Technology</div>
+            <div class="tech-spec-value">PostgreSQL / PostGIS · Graph Topology · WebGIS</div>
+          </div>
+          <div class="tech-spec-card">
+            <div class="tech-spec-title">Dataset Type</div>
+            <div class="tech-spec-value">100% Synthetic Graph (Biskra Regional Footprint)</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Deep Dive -->
+    <section class="section-block">
+      <div class="container">
+
+        <!-- Section 1: Problem Statement & Objectives -->
+        <div class="content-block">
+          <h2>1. Engineering Context &amp; Technical Objective</h2>
+          <p>
+            Electric distribution grids across arid, vast regions such as the Biskra territory present critical spatial challenges: dispersed medium-voltage (MV) lines, remote step-down distribution transformers, and complex feeder arrangements susceptible to thermal and sandstorm stress. When field records exist only as disconnected CAD drawings or static paper schematics, grid operators lack topological awareness.
+          </p>
+          <p>
+            The technical goal of this prototype was to engineer a clean, relational geometric network model from the ground up, establishing geometric and logical connectivity across all network tiers and exposing topological traversal algorithms through a lightweight WebGIS interface.
+          </p>
+        </div>
+
+        <!-- Section 2: Architectural Pipeline Diagram (SVG) -->
+        <div class="content-block">
+          <h2>2. Prototype System Architecture</h2>
+          <p>
+            The architecture follows a strict data pipeline ensuring data integrity at every tier, from geometric validation to real-time client-side graph traversal.
+          </p>
+
+          <div class="diagram-card">
+            <svg viewBox="0 0 1000 320" width="100%" height="auto" style="max-width: 100%;">
+              <defs>
+                <linearGradient id="p-grad" x1="0" y1="0" x2="1" y2="0">
+                  <stop offset="0%" stop-color="#0ea5e9"/>
+                  <stop offset="100%" stop-color="#14b8a6"/>
+                </linearGradient>
+              </defs>
+              <!-- Tier 1 -->
+              <rect x="20" y="40" width="200" height="240" rx="6" fill="#0c121a" stroke="#1f2e42" stroke-width="1.5"/>
+              <text x="36" y="75" fill="#2dd4bf" font-family="monospace" font-size="12" font-weight="bold">TIER 1: SPATIAL DATA</text>
+              <text x="36" y="105" fill="#f8fafc" font-size="14" font-weight="bold">PostgreSQL / PostGIS</text>
+              <text x="36" y="135" fill="#94a3b8" font-size="12">• Substation MV/LV Busbars</text>
+              <text x="36" y="160" fill="#94a3b8" font-size="12">• Feeder Lines (Linestrings)</text>
+              <text x="36" y="185" fill="#94a3b8" font-size="12">• Transformers &amp; Breakers</text>
+              <text x="36" y="210" fill="#94a3b8" font-size="12">• GIST Spatial Indices</text>
+              <text x="36" y="235" fill="#94a3b8" font-size="12">• Topological Check Constraints</text>
+
+              <!-- Connector 1 -->
+              <path d="M 220 160 L 270 160" stroke="#14b8a6" stroke-width="2" stroke-dasharray="4 4"/>
+              <polygon points="268,156 276,160 268,164" fill="#14b8a6"/>
+
+              <!-- Tier 2 -->
+              <rect x="276" y="40" width="210" height="240" rx="6" fill="#0c121a" stroke="#1f2e42" stroke-width="1.5"/>
+              <text x="292" y="75" fill="#2dd4bf" font-family="monospace" font-size="12" font-weight="bold">TIER 2: TOPOLOGY ENGINE</text>
+              <text x="292" y="105" fill="#f8fafc" font-size="14" font-weight="bold">Network Graph Rules</text>
+              <text x="292" y="135" fill="#94a3b8" font-size="12">• Edge-to-Node Snapping (1m)</text>
+              <text x="292" y="160" fill="#94a3b8" font-size="12">• Directed Graph Structure</text>
+              <text x="292" y="185" fill="#94a3b8" font-size="12">• Upstream Source Tracing</text>
+              <text x="292" y="210" fill="#94a3b8" font-size="12">• Downstream Load Tracing</text>
+              <text x="292" y="235" fill="#94a3b8" font-size="12">• Circuit Breaker Isolation</text>
+
+              <!-- Connector 2 -->
+              <path d="M 486 160 L 536 160" stroke="#14b8a6" stroke-width="2" stroke-dasharray="4 4"/>
+              <polygon points="534,156 542,160 534,164" fill="#14b8a6"/>
+
+              <!-- Tier 3 -->
+              <rect x="542" y="40" width="200" height="240" rx="6" fill="#0c121a" stroke="#1f2e42" stroke-width="1.5"/>
+              <text x="558" y="75" fill="#2dd4bf" font-family="monospace" font-size="12" font-weight="bold">TIER 3: VECTOR SERVICES</text>
+              <text x="558" y="105" fill="#f8fafc" font-size="14" font-weight="bold">Tile &amp; Trace Microservices</text>
+              <text x="558" y="135" fill="#94a3b8" font-size="12">• Mapbox Vector Tiles (MVT)</text>
+              <text x="558" y="160" fill="#94a3b8" font-size="12">• GeoJSON Trace RPC</text>
+              <text x="558" y="185" fill="#94a3b8" font-size="12">• Fast Spatial Sub-querying</text>
+              <text x="558" y="210" fill="#94a3b8" font-size="12">• In-memory Topology Cache</text>
+              <text x="558" y="235" fill="#94a3b8" font-size="12">• Sub-100ms Query Latency</text>
+
+              <!-- Connector 3 -->
+              <path d="M 742 160 L 792 160" stroke="#14b8a6" stroke-width="2" stroke-dasharray="4 4"/>
+              <polygon points="790,156 798,160 790,164" fill="#14b8a6"/>
+
+              <!-- Tier 4 -->
+              <rect x="798" y="40" width="182" height="240" rx="6" fill="#0c121a" stroke="#1f2e42" stroke-width="1.5"/>
+              <text x="814" y="75" fill="#2dd4bf" font-family="monospace" font-size="12" font-weight="bold">TIER 4: WEBGIS UI</text>
+              <text x="814" y="105" fill="#f8fafc" font-size="14" font-weight="bold">Dispatch Console</text>
+              <text x="814" y="135" fill="#94a3b8" font-size="12">• WebGL Acceleration</text>
+              <text x="814" y="160" fill="#94a3b8" font-size="12">• Point-and-Click Fault</text>
+              <text x="814" y="185" fill="#94a3b8" font-size="12">• Blast Radius Polygon</text>
+              <text x="814" y="210" fill="#94a3b8" font-size="12">• Affected Metrics Count</text>
+              <text x="814" y="235" fill="#94a3b8" font-size="12">• Mobile Dispatch Mode</text>
+            </svg>
+          </div>
+        </div>
+
+        <!-- Section 3: Technical Capabilities Demonstrated -->
+        <div class="content-block">
+          <h2>3. Key Engineering Capabilities Demonstrated</h2>
+          
+          <div class="capabilities-grid" style="margin-top: 24px;">
+            <div class="capability-card">
+              <div class="capability-header">
+                <span class="capability-title">Geometric Network Topology</span>
+                <span class="capability-num">CAP-01</span>
+              </div>
+              <ul class="capability-list">
+                <li class="capability-item">Rigorous node-to-edge topological connectivity enforcing coincidence rules</li>
+                <li class="capability-item">Hierarchical classification: 60kV Transmission → 30kV / 10kV MV Feeders → 400V LV Distribution</li>
+                <li class="capability-item">Multi-junction validation preventing disconnected orphan segments</li>
+              </ul>
+            </div>
+
+            <div class="capability-card">
+              <div class="capability-header">
+                <span class="capability-title">Upstream / Downstream Tracing</span>
+                <span class="capability-num">CAP-02</span>
+              </div>
+              <ul class="capability-list">
+                <li class="capability-item">Instant recursive SQL Common Table Expression (CTE) graph traversal in PostGIS</li>
+                <li class="capability-item">Identification of feeding substation busbar from any downstream consumer point</li>
+                <li class="capability-item">Isolation of isolating disconnect switches to determine minimum switching boundaries</li>
+              </ul>
+            </div>
+
+            <div class="capability-card">
+              <div class="capability-header">
+                <span class="capability-title">Outage &amp; Failure Blast Radius</span>
+                <span class="capability-num">CAP-03</span>
+              </div>
+              <ul class="capability-list">
+                <li class="capability-item">Interactive scenario simulation: trigger a transformer fault or line rupture</li>
+                <li class="capability-item">Real-time computation of de-energized line kilometers and isolated consumer load nodes</li>
+                <li class="capability-item">Spatial bounding-hull generation for field maintenance dispatch routing</li>
+              </ul>
+            </div>
+
+            <div class="capability-card">
+              <div class="capability-header">
+                <span class="capability-title">Zero-Latency WebGIS Console</span>
+                <span class="capability-num">CAP-04</span>
+              </div>
+              <ul class="capability-list">
+                <li class="capability-item">High-density vector tile rendering with dynamic layer filtering</li>
+                <li class="capability-item">Visual differentiation of energized vs. de-energized feeder lines in under 50ms</li>
+                <li class="capability-item">Mobile-responsive console engineered for tablet operation in field vehicles</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Section 4: Technologies Used -->
+        <div class="content-block">
+          <h2>4. Technical Stack</h2>
+          <div class="opportunities-grid" style="margin-top: 20px;">
+            <div class="opp-card">
+              <span class="opp-marker"></span>
+              <div>
+                <div class="opp-title">PostgreSQL &amp; PostGIS</div>
+                <div style="font-size: 0.8125rem; color: var(--text-muted); font-family: var(--font-mono);">Spatial schema &amp; recursive topology</div>
+              </div>
+            </div>
+            <div class="opp-card">
+              <span class="opp-marker"></span>
+              <div>
+                <div class="opp-title">pgRouting &amp; Custom CTEs</div>
+                <div style="font-size: 0.8125rem; color: var(--text-muted); font-family: var(--font-mono);">Directed graph traversal &amp; tracing</div>
+              </div>
+            </div>
+            <div class="opp-card">
+              <span class="opp-marker"></span>
+              <div>
+                <div class="opp-title">MapLibre GL &amp; Vector Tiles</div>
+                <div style="font-size: 0.8125rem; color: var(--text-muted); font-family: var(--font-mono);">Hardware-accelerated web rendering</div>
+              </div>
+            </div>
+            <div class="opp-card">
+              <span class="opp-marker"></span>
+              <div>
+                <div class="opp-title">Python / GeoPandas</div>
+                <div style="font-size: 0.8125rem; color: var(--text-muted); font-family: var(--font-mono);">Synthetic network generation &amp; validation</div>
+              </div>
+            </div>
+            <div class="opp-card">
+              <span class="opp-marker"></span>
+              <div>
+                <div class="opp-title">QGIS Desktop</div>
+                <div style="font-size: 0.8125rem; color: var(--text-muted); font-family: var(--font-mono);">Cartographic staging &amp; schema design</div>
+              </div>
+            </div>
+            <div class="opp-card">
+              <span class="opp-marker"></span>
+              <div>
+                <div class="opp-title">Vanilla JS / CSS3</div>
+                <div style="font-size: 0.8125rem; color: var(--text-muted); font-family: var(--font-mono);">Lightweight operational UI (no framework bloat)</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Section 5: Engineering Relevance to Partners -->
+        <div class="content-block">
+          <h2>5. Application to Energy &amp; Infrastructure Projects</h2>
+          <p>
+            The spatial models, topological rule sets, and WebGIS architecture proven in this prototype translate directly into mission-critical assignments for utility operators, EPC contractors, and infrastructure owners:
+          </p>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 12px; margin-top: 16px;">
+            <li class="capability-item">
+              <span><strong>As-Built Digitalization:</strong> Transforming legacy AutoCAD drawings and field PDFs into structured PostGIS network layers.</span>
+            </li>
+            <li class="capability-item">
+              <span><strong>Inspection &amp; Defect Mapping:</strong> Connecting thermal imaging and inspection logs directly to topological asset records.</span>
+            </li>
+            <li class="capability-item">
+              <span><strong>Subcontracted Work Packages:</strong> Executing complete geospatial data modeling and WebGIS deployment as an independent technical partner.</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Call to Action Banner -->
+        <div class="napec-banner" style="margin-top: 48px;">
+          <div class="napec-kicker">
+            <span>TECHNICAL COLLABORATION</span>
+          </div>
+          <h2 class="napec-title">Need Network Intelligence for Your Utility or Infrastructure Project?</h2>
+          <p class="napec-text">
+            I am available as an independent technical partner to design spatial network schemas, build topological tracing engines, and deliver operational WebGIS systems for energy, EPC, and infrastructure organizations.
+          </p>
+          <div style="display: flex; flex-wrap: wrap; gap: 14px;">
+            <a href="../index.html#contact" class="btn btn-primary">Discuss Collaboration</a>
+            <a href="fiber-network-intelligence.html" class="btn btn-secondary">Explore Fiber Network Project</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div>
+          <div class="footer-brand-title">ADEL HAZRECHE</div>
+          <div class="footer-brand-desc">
+            Geospatial / Spatial Intelligence Engineer · Independent Geospatial Consultant · Algeria
+          </div>
+        </div>
+        <div class="footer-nav">
+          <a href="../index.html" class="footer-link">Home</a>
+          <a href="../index.html#capabilities" class="footer-link">Capabilities</a>
+          <a href="../index.html#architecture" class="footer-link">Architecture</a>
+          <a href="../index.html#projects" class="footer-link">Technical Work</a>
+          <a href="../index.html#partnership" class="footer-link">Partnership</a>
+          <a href="../index.html#contact" class="footer-link">Contact</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>&copy; 2026 Adel Hazreche. Independent Geospatial Consultant.</div>
+        <div>Synthetic Prototype · No official Sonelgaz affiliation</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>
